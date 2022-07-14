@@ -1,0 +1,21 @@
+.Dimension table,
+.Dimension tbody {
+  width: 100%;
+}
+
+.Dimension td {
+  padding: 12px;
+}
+
+.Dimension td {
+  border-top: 1px solid var(--black01);
+}
+
+.Dimension.disabled {
+  background-color: var(--black003);
+  color: var(--black04);
+}
+
+.DimensionModal .rootContainer > div {
+  margin-top: 16px;
+}

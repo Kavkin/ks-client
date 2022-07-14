@@ -1,0 +1,36 @@
+.CompContextualMenu {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.CompContextualMenu a {
+  max-width: 32px;
+  max-height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.compContextualMenubackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-radius: 3px;
+}
+
+.CompContextualMenu:hover .compContextualMenubackground {
+  background-color: var(--themePrimary);
+  opacity: 0.15;
+}
+
+.CompContextualMenu:active .compContextualMenubackground {
+  background-color: var(--themePrimary);
+  opacity: 0.2;
+}

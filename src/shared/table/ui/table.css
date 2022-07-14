@@ -1,0 +1,17 @@
+.Table .ms-DetailsList-headerWrapper > div {
+  padding: 0;
+}
+
+.Table div.ms-DetailsHeader-cellName *,
+.Table div.ms-DetailsHeader-cellTitle * {
+  background-color: var(--neutralLighter);
+}
+
+.Table .ms-DetailsList .ms-DetailsHeader {
+  background-color: var(--neutralLighterAlt);
+}
+
+.Table .wrapper {
+  border: 1px solid var(--black02);
+  border-radius: 2px;
+}

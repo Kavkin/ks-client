@@ -1,0 +1,14 @@
+.Nav .VerticalTabs {
+  --itemHeight: 48;
+  position: relative;
+}
+
+.Nav .VerticalTabs .item {
+  padding-left: 20px;
+}
+
+.Nav .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

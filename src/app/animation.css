@@ -1,0 +1,177 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes up10rem {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1rem);
+  }
+}
+
+@keyframes down10rem {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes right10rem {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3rem);
+  }
+}
+
+@keyframes left30rem {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+
+@keyframes right30rem {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(30%);
+  }
+}
+
+@keyframes toBottom {
+  from {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
+  to {
+    transform: translateY(100vh);
+    /* opacity: 0.9; */
+  }
+}
+
+@keyframes toBottom3rem {
+  from {
+    transform: translateY(3rem);
+    /* opacity: 1; */
+  }
+  to {
+    transform: translateY(0);
+    /* opacity: 0.9; */
+  }
+}
+
+@keyframes toRight {
+  from {
+    transform: translateX(0);
+    /* opacity: 1; */
+  }
+  to {
+    transform: translateX(100vw);
+    /* opacity: 0.9; */
+  }
+}
+
+.animSwitchHorizontal-exit-active.animSwitchFromRight {
+  animation-name: left30rem, disappear;
+  animation-duration: var(--switchHorizontalAnimationDuration, 0.5s);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.animSwitchHorizontal-enter-active.animSwitchFromRight {
+  animation-name: left30rem, appear;
+  animation-duration: var(--switchHorizontalAnimationDuration, 0.5s);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-direction: reverse, normal;
+}
+
+.animSwitchHorizontal-exit-active.animSwitchFromLeft {
+  animation-name: right30rem, disappear;
+  animation-duration: var(--switchHorizontalAnimationDuration, 0.5s);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.animSwitchHorizontal-enter-active.animSwitchFromLeft {
+  animation-name: right30rem, appear;
+  animation-duration: var(--switchHorizontalAnimationDuration, 0.5s);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-direction: reverse, normal;
+}
+
+.appearRight {
+  transform: translateX(100vw);
+  animation-name: toRight;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+
+.appearBottom {
+  transform: translateY(100vh);
+  animation-name: toBottom;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+
+.appear,
+.appear-enter-active {
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.appear-exit-active {
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-direction: reverse;
+}
+
+.appearVertically-exit-active {
+  animation-name: disappear, up10rem;
+  animation-duration: calc(var(--appPageSwitchAnimation, 100) * 1ms);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.appearVertically-enter-active {
+  opacity: 0;
+  animation-name: appear, down10rem;
+  animation-duration: calc(var(--appPageSwitchAnimation, 100) * 1ms);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-direction: normal, reverse;
+}

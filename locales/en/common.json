@@ -1,0 +1,158 @@
+{
+  "t": {
+    "locale": "en-US",
+    "messages": {
+      "saved": "Saved"
+    },
+    "labels": {
+      "field": "Field",
+      "main": "Main",
+      "name": "Name",
+      "styles": "Styles",
+      "style": "Styles",
+      "props": "Props",
+      "layout": "Layout",
+      "title": "Title"
+    },
+    "pagesNames": {
+      "createUser": "Create user",
+      "userList": "Users",
+      "login": "Login",
+      "formConstructor": "Form constructor"
+    },
+    "userPage": {
+      "searchByNameEmail": "Search by name or email",
+      "createUser": "Create user",
+      "editUser": "Edit user",
+      "users": "Users",
+      "pages": "Pages"
+    },
+    "formConstructorPage": {
+      "bindings": "Bindings",
+      "addBindings": "Add bindings",
+      "editThisForm": "Edit this form"
+    },
+    "buttons": {
+      "add": "Add",
+      "back": "Back",
+      "ok": "Ok",
+      "cancel": "Cancel",
+      "save": "Save",
+      "done": "Done",
+      "saving": "Saving...",
+      "toggleSelection": "Toggle selection",
+      "toggleSelectionForAll": "Toggle selection for all items",
+      "edit": "Edit",
+      "create": "Create",
+      "delete": "Delete",
+      "filter": "Filter",
+      "close": "Close",
+      "remove": "Remove",
+      "logout": "Logout",
+      "login": "Login"
+    },
+    "pagination": {
+      "firstPage": "Go to the first page",
+      "previousPage": "Go to the previous page",
+      "currentPage": "Current page",
+      "nextPage": "Go to the next page",
+      "lastPage": "Go to the last page"
+    },
+    "entities": {
+      "user": {
+        "id": "Id",
+        "email": "Email",
+        "fullname": "Name",
+        "username": "Username",
+        "password": "Password",
+        "createdAt": "Created",
+        "updatedAt": "Updated"
+      }
+    },
+    "unknownError": "Unknown error",
+    "serverInvalidData": "Received invalid data from server",
+
+    "P2002": "Already exists",
+    "assertString": "Required",
+    "assertNotMoreThan": "More than {{- _input2}}",
+    "assertNotUndefined": "Required",
+
+    "assertMatchPattern": "Does not match the pattern: {{- _input2}}",
+    "assertMatchPattern/@.*\\.*./": "Does not match email pattern",
+    "assertMatchPattern/[A-Z]/": "Must contain uppercase letter",
+    "assertMatchPattern/[a-z]/": "Must contain lowercase letter",
+    "assertMatchPattern/[0-9]/": "Must contain number",
+    "assertMatchPattern@.*\\.*.": "Does not match email pattern",
+    "assertMatchPattern[A-Z]": "Must contain uppercase letter",
+    "assertMatchPattern[a-z]": "Must contain lowercase letter",
+    "assertMatchPattern[0-9]": "Must contain number",
+
+    "schemaTypes": {
+      "FORM": "Form",
+      "FORM_DIMENSION": "Dimension",
+      "PRESET": "Preset",
+      "COMP": "Component"
+    },
+
+    "assertIgnorePattern/\\W+/": "Can contain only symbols \u003Cnobr\u003Eand \"_\"\u003C/nobr\u003E",
+
+    "calendar": {
+      "firstDayOfTheWeek": 0,
+      "months": {
+        "January": "January",
+        "February": "February",
+        "March": "March",
+        "April": "April",
+        "May": "May",
+        "June": "June",
+        "July": "July",
+        "August": "August",
+        "September": "September",
+        "October": "October",
+        "November": "November",
+        "December": "December"
+      },
+      "shortMonths": {
+        "Jan": "Jan",
+        "Feb": "Feb",
+        "Mar": "Mar",
+        "Apr": "Apr",
+        "May": "May",
+        "Jun": "Jun",
+        "Jul": "Jul",
+        "Aug": "Aug",
+        "Sep": "Sep",
+        "Oct": "Oct",
+        "Nov": "Nov",
+        "Dec": "Dec"
+      },
+      "days": {
+        "Sunday": "Sunday",
+        "Monday": "Monday",
+        "Tuesday": "Tuesday",
+        "Wednesday": "Wednesday",
+        "Thursday": "Thursday",
+        "Friday": "Friday",
+        "Saturday": "Saturday"
+      },
+      "shortDays": {
+        "Sunday": "S",
+        "Monday": "M",
+        "Tuesday": "T",
+        "Wednesday": "W",
+        "Thursday": "T",
+        "Friday": "F",
+        "Saturday": "S"
+      },
+      "goToToday": "Go to today",
+      "prevMonthAriaLabel": "Go to previous month",
+      "nextMonthAriaLabel": "Go to next month",
+      "prevYearAriaLabel": "Go to previous year",
+      "nextYearAriaLabel": "Go to next year"
+    }
+  },
+  "errors": {
+    "responseNot200": "Server has returned error!",
+    "TypeError": "Unknown error!"
+  }
+}

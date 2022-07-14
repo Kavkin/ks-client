@@ -1,0 +1,73 @@
+.Layout {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+/*
+ headerNavMainLayout
+ */
+.Layout.header-main-nav {
+  display: grid;
+  grid-template-areas:
+    'fakeHeader fakeHeader fakeHeader'
+    'nav main main';
+  grid-template-rows: calc(var(--headerHeight) * 1px) 1fr;
+  grid-template-columns: calc(var(--navPanel_size) * 1px) 1fr;
+}
+
+/*
+ headerMainLayout
+ */
+
+.Layout.header-main {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main';
+  grid-template-rows: calc(var(--headerHeight) * 1px) 1fr;
+  grid-template-columns: calc(var(--navPanel_size * 1px)) 1fr;
+}
+
+/*
+ MainLayout
+ */
+
+.Layout.main {
+  grid-template-areas: 'main';
+}
+
+/*
+ STYLES
+ */
+
+.Main {
+  grid-area: main;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.NavPanel {
+  grid-area: nav;
+  height: 100%;
+}
+
+header {
+  height: calc(var(--headerHeight) * 1px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--black02);
+  z-index: 300;
+}
+
+/*
+ OTHER
+ */
+
+.Layout > .ps__rail-y,
+.Layout > .ps__rail-x {
+  z-index: 301;
+}
