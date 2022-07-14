@@ -10,8 +10,8 @@ const ROUTES = {
   }),
 
   MAIN: new Route({
-    name: 'User profile',
-    path: '/user-profile',
+    name: 'Main',
+    path: '/main',
     payload: {
       layout: ['main', 'nav', 'header'],
     },
