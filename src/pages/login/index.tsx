@@ -18,7 +18,7 @@ export default function Login(): JSX.Element {
     try {
       const response = await axios.post<Transfer<LoginResponse>>('api/auth', data)
       localStorage.setItem('userRole', response.data.dataBlock.role)
-      history.push(ROUTES.INCIDENT_LIST.PATH)
+      history.push(ROUTES.MAIN.PATH)
     } catch (e) {
       errorMessage('Неверный логин или пароль')
     }

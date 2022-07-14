@@ -7,7 +7,7 @@ import ROUTES from '@/constants/routes'
 import Nav, { NavItem } from '@/shared/nav'
 import { useResize } from '@/utils/use-resize/use-resize'
 
-const items: NavItem[] = [ROUTES.INCIDENT_LIST, ROUTES.RISK_LIST, ROUTES.SCHEMA_LIST].map((route) => {
+const items: NavItem[] = [ROUTES.MAIN].map((route) => {
   return {
     label: route.NAME,
     key: route.PATH,
@@ -41,13 +41,9 @@ export default function NavPanel(): JSX.Element | null {
   }
 
   return (
-    <>
-      {!ROUTES.LOGIN.isCurrent && !ROUTES.FORM_CONSTRUCTOR.isCurrent && (
-        <div className="NavPanel" ref={ref}>
-          {ResizeLine}
-          <Nav items={items} onChange={onLinkClick} selectedKey={currentRoute?.PATH} />
-        </div>
-      )}
-    </>
+    <div className="NavPanel" ref={ref}>
+      {ResizeLine}
+      <Nav items={items} onChange={onLinkClick} selectedKey={currentRoute?.PATH} />
+    </div>
   )
 }
