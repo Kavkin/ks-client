@@ -6,7 +6,6 @@ import axios from 'axios'
 import React from 'react'
 import { Field, Form } from 'react-final-form'
 
-//import { LoginResponse, Transfer } from '@/api/types'
 import history from '@/app/history'
 import ROUTES from '@/constants/routes'
 import { Button } from '@/shared/button'
