@@ -6,7 +6,6 @@ import axios from 'axios'
 import React from 'react'
 import { Field, Form } from 'react-final-form'
 
-import { LoginResponse, Transfer } from '@/api/types'
 import history from '@/app/history'
 import ROUTES from '@/constants/routes'
 import { Button } from '@/shared/button'
@@ -16,8 +15,8 @@ import { errorMessage } from '@/shared/toast'
 export default function Login(): JSX.Element {
   async function onSubmit(data: Record<string, unknown>) {
     try {
-      const response = await axios.post<Transfer<LoginResponse>>('api/auth', data)
-      localStorage.setItem('userRole', response.data.dataBlock.role)
+      const response = await axios.post<any, any>('api/v1/auth/login', data)
+      localStorage.setItem('accessToken', response.token)
       history.push(ROUTES.MAIN.PATH)
     } catch (e) {
       errorMessage('Неверный логин или пароль')
