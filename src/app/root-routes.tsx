@@ -3,6 +3,8 @@ import React from 'react'
 import { Route, Switch, useLocation } from 'react-router-dom'
 import { CSSTransition, SwitchTransition } from 'react-transition-group'
 
+import EnquiryForm from '@/pages/create-enquairy/create-enquiry'
+import EnquiriesForm from '@/pages/enquiries/enquiries'
 import LoginPage from '@/pages/login'
 import Main from '@/pages/main/main'
 import NotFoundPage from '@/pages/not-found/not-found'
@@ -24,6 +26,12 @@ export default function RootRoutes() {
     <SwitchTransitionAny mode="out-in">
       <CSSTransitionAny key={location.pathname} timeout={100} classNames="appearVertically">
         <SwitchAny location={location}>
+          <RouteAny path={ROUTES.ENQUIRIES.PATH}>
+            <EnquiriesForm />
+          </RouteAny>
+          <RouteAny path={ROUTES.ENQUIRIES__CREATE.PATH}>
+            <EnquiryForm />
+          </RouteAny>
           <RouteAny path={ROUTES.LOGIN.PATH}>
             <LoginPage />
           </RouteAny>
