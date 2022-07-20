@@ -16,6 +16,22 @@ const ROUTES = {
       layout: ['main', 'nav', 'header'],
     },
   }),
+
+  ENQUIRIES__CREATE: new Route({
+    name: 'Создать заявку',
+    path: '/enquiries/create',
+    payload: {
+      layout: ['main', 'nav', 'header'],
+    },
+  }),
+
+  ENQUIRIES: new Route({
+    name: 'Заявки',
+    path: '/enquiries',
+    payload: {
+      layout: ['main', 'nav', 'header'],
+    },
+  }),
 }
 
 export type Routes = typeof ROUTES
