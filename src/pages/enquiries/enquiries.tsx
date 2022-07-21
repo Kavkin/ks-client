@@ -5,9 +5,9 @@ import './enquiries.css'
 import React, { useEffect, useState } from 'react'
 
 const columns = [
-  { key: 'column1', name: 'Name', fieldName: 'name', minWidth: 100, maxWidth: 200, isResizable: true },
-  { key: 'column2', name: 'Value', fieldName: 'value', minWidth: 100, maxWidth: 200, isResizable: true },
-  { key: 'column3', name: 'Value', fieldName: 'value', minWidth: 100, maxWidth: 200, isResizable: true },
+  { key: 'column1', name: 'Имя', fieldName: 'name', minWidth: 100, maxWidth: 200, isResizable: true },
+  { key: 'column2', name: 'Телефон', fieldName: 'phone', minWidth: 100, maxWidth: 200, isResizable: true },
+  { key: 'column3', name: 'Комментарий', fieldName: 'comment', minWidth: 100, maxWidth: 200, isResizable: true },
 ]
 
 export default function Enquiries(): JSX.Element {
